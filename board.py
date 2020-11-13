@@ -17,6 +17,7 @@ class Board():
         f =  False
     return f  
 
+<<<<<<< HEAD
   def placeItem(self,item):
     if isinstance(item,Item) == True:
       self.stuff.append(item)
@@ -90,8 +91,47 @@ class Board():
       #f = True
     return f
 
+=======
+  def placeItem(item, x, y):
+    if isInstance(item,Item) == true:
+      self.stuff.append(item)
+
+  def hasWon(itemType):
+    xs = []
+    ys = []
+    f = false
+    for i in self.stuff:
+      if isinstance(i,itemType):
+        xs.append(i.xpos)
+        ys.append(i.ypos)
+    n1,n2,n3 = 0,0,0
+    for j in xs:
+      if j == 0:
+        n1 +=1
+      if j == 1:
+        n2 += 1
+      else:
+        n3 +=1
+      if n1 == 3 or n2 == 3 or n3 == 3:
+        f = True
+    n1,n2,n3 = 0,0,0
+    for j in ys:
+      if j == 0:
+        n1 +=1
+      if j == 1:
+        n2 += 1
+      else:
+        n3 +=1
+      if n1 == 3 or n2 == 3 or n3 == 3:
+        f = True
+>>>>>>> origin/main
 
       
 
       
+<<<<<<< HEAD
 
+=======
+game = Board()
+print(game.isSpaceFree(0,1))
+>>>>>>> origin/main
