@@ -3,7 +3,7 @@ class Player:
     self.name = name
   
   def chooseType(self,item):
-    if int(item) == 0 or int(item) == 1:
+    if item == 0 or item == 1:
       self.itemType = int(item)
     else: 
       self.itemType = 0
