@@ -7,6 +7,9 @@ class Player:
       self.itemType = int(item)
     else: 
       self.itemType = 0
+
+  def getName(self):
+    return str(self.name)
   
   
   

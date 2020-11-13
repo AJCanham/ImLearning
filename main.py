@@ -60,7 +60,7 @@ while True:
     crossTurn()
   if gameBoard.hasNoughtWon() == True or gameBoard.hasCrossWon() == True:
     print("Player 1 wins")
-    print(player2.name() , "Can suck a dick")
+    print(player2.getName() , "Can suck a dick")
     break
   print("player 2 turn:")
   if player2.itemType == 0:
@@ -69,7 +69,7 @@ while True:
     crossTurn()
   if gameBoard.hasNoughtWon() == True or gameBoard.hasCrossWon() == True:
     print("Player 2 wins")
-    print(player1.name() , "Can suck a dick")
+    print(player1.getName() , "Can suck a dick")
     break
 
   

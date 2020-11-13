@@ -67,8 +67,7 @@ class Board():
         ys.append(i.posy)
     xn = [0 for i in range(0,3)]  
     yn = [0  for i in range(0,3)]
-    print(xn,yn)
-    print(xs,ys)
+
     for i in xs:
       xn[i] += 1
       if xn[i] == 3:
@@ -88,7 +87,7 @@ class Board():
       #if xs[j] == 2-ys[j]:
         #n +=1
     #if n == 3:
-      f = True
+      #f = True
     return f
 
 
